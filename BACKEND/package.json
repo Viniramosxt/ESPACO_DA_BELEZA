@@ -1,0 +1,19 @@
+{
+  "name": "salao-beleza-backend",
+  "version": "1.0.0",
+  "description": "API backend para o Salão da Beleza com Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@cloudflare/workers-types": "^4.20230419.0"
+  }
+}

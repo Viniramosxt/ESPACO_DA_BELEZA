@@ -1,0 +1,19 @@
+{
+  "name": "salao-beleza-backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2023-12-01",
+  "env": {
+    "production": {
+      "vars": {
+        "SUPABASE_URL": "",
+        "SUPABASE_KEY": ""
+      }
+    },
+    "development": {
+      "vars": {
+        "SUPABASE_URL": "",
+        "SUPABASE_KEY": ""
+      }
+    }
+  }
+}
