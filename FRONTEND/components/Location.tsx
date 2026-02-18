@@ -4,7 +4,7 @@ export default function Location() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-gold-400 text-lg">📍</span>
+          <svg className="w-5 h-5 text-gold-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
           <h2 className="font-serif text-2xl md:text-3xl text-white mt-2 mb-2">Nossa</h2>
           <p className="font-cursive text-4xl md:text-5xl text-gold-400 mb-4">localização</p>
           <div className="section-divider" />
@@ -14,7 +14,7 @@ export default function Location() {
           {/* Map */}
           <div className="glass-card overflow-hidden h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d-60.0!3d-3.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDAnMDAuMCJTIDYwwrAwMCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.0833291261878!2d-59.97310672446336!3d-3.0046874600600724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c19fe0cdd862d%3A0xe9209c4bc0c9a3e9!2sSal%C3%A3o%20Espa%C3%A7o%20Da%20Beleza!5e0!3m2!1spt-BR!2sbr!4v1771429492788!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

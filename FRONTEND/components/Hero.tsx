@@ -19,15 +19,13 @@ export default function Hero() {
         {/* Decorative line */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-16 h-px bg-gradient-to-r from-transparent to-gold-400" />
-          <span className="text-gold-400 text-lg">✦</span>
+          <svg className="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold-400" />
         </div>
 
         {/* Logo text */}
         <div className="mb-4">
-          <div className="w-24 h-24 mx-auto rounded-full border-2 border-gold-400 flex items-center justify-center mb-6">
-            <span className="font-cursive text-gold-400 text-4xl">EB</span>
-          </div>
+          <img src="/logo.png" alt="Espaço da Beleza" className="w-24 h-24 mx-auto rounded-full object-cover border-2 border-gold-400 mb-6" />
         </div>
 
         <h1 className="font-cursive text-5xl md:text-7xl lg:text-8xl text-gold-400 mb-4 fade-in-up">
@@ -70,7 +68,7 @@ export default function Hero() {
         {/* Decorative bottom */}
         <div className="flex items-center justify-center gap-4 mt-16">
           <div className="w-16 h-px bg-gradient-to-r from-transparent to-gold-400" />
-          <span className="text-gold-400 text-lg">✦</span>
+          <svg className="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold-400" />
         </div>
       </div>

@@ -20,9 +20,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full border-2 border-gold-400 flex items-center justify-center">
-              <span className="font-cursive text-gold-400 text-xl">EB</span>
-            </div>
+            <img src="/logo.png" alt="Espaço da Beleza" className="w-12 h-12 rounded-full object-cover border-2 border-gold-400" />
             <div>
               <h1 className="font-cursive text-gold-400 text-xl leading-tight">Espaço da Beleza</h1>
               <p className="text-[10px] text-gold-600 tracking-[3px] uppercase">Beleza e Cuidado</p>

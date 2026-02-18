@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-gold-400 text-lg">✦</span>
+          <svg className="w-5 h-5 text-gold-400 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
           <h2 className="font-cursive text-4xl md:text-5xl text-gold-400 mt-2 mb-4">Sobre Nós</h2>
           <div className="section-divider mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -46,7 +46,7 @@ export default function About() {
                 <p className="text-gray-500 text-xs uppercase tracking-wider">Anos</p>
               </div>
               <div className="text-center glass-card p-4">
-                <p className="font-serif text-3xl text-gold-400 mb-1">1000+</p>
+                <p className="font-serif text-3xl text-gold-400 mb-1">100+</p>
                 <p className="text-gray-500 text-xs uppercase tracking-wider">Clientes</p>
               </div>
               <div className="text-center glass-card p-4">

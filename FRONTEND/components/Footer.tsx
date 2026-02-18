@@ -6,9 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full border-2 border-gold-400 flex items-center justify-center">
-                <span className="font-cursive text-gold-400 text-xl">EB</span>
-              </div>
+              <img src="/logo.png" alt="Espaço da Beleza" className="w-12 h-12 rounded-full object-cover border-2 border-gold-400" />
               <div>
                 <h3 className="font-cursive text-gold-400 text-xl">Espaço da Beleza</h3>
                 <p className="text-[10px] text-gold-600 tracking-[3px] uppercase">Beleza e Cuidado</p>
@@ -48,17 +46,17 @@ export default function Footer() {
             <h4 className="text-gold-400 font-serif text-lg mb-4">Contato</h4>
             <div className="space-y-3">
               <p className="text-gray-500 text-sm flex items-center gap-2">
-                <span className="text-gold-400">📍</span>
+                <svg className="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
                 Rua Acapulco, 12, Nova Cidade - Manaus/AM
               </p>
               <p className="text-gray-500 text-sm flex items-center gap-2">
-                <span className="text-gold-400">📱</span>
+                <svg className="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
                 <a href="tel:+5592999836459" className="hover:text-gold-400 transition-colors">
                   (92) 99983-6459
                 </a>
               </p>
               <p className="text-gray-500 text-sm flex items-center gap-2">
-                <span className="text-gold-400">📸</span>
+                <svg className="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" /></svg>
                 <a
                   href="https://instagram.com/salaoespacodabeleza.am"
                   target="_blank"
