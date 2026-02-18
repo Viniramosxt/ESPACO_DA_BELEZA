@@ -1,7 +1,7 @@
 {
-  "name": "salao-beleza-frontend",
+  "name": "espaco-da-beleza-frontend",
   "version": "1.0.0",
-  "description": "Site do Salão da Beleza",
+  "description": "Site do Espaço da Beleza - Salão de Beleza em Manaus",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +18,9 @@
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0"
+    "@types/react-dom": "^18.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
   }
 }
