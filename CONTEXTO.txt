@@ -1,0 +1,11 @@
+Banco
+
+Supabase
+
+Frontend (site do salão)
+
+Netlify
+
+backend 
+
+Cloudflare Workers
