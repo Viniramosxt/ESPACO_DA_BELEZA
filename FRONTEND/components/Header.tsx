@@ -10,8 +10,8 @@ export default function Header() {
     { label: 'Sobre', href: '#sobre' },
     { label: 'Serviços', href: '#servicos' },
     { label: 'Combos', href: '#combos' },
+    { label: 'Agendamento', href: '#agendamento' },
     { label: 'Localização', href: '#localizacao' },
-    { label: 'Contato', href: '#contato' },
   ]
 
   return (
