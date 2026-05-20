@@ -148,6 +148,11 @@ export default {
                 options: { delay: 0 },
                 textMessage: { text: msg },
               }),
+            }).then(async (res) => {
+              const text = await res.text()
+              console.log(`[Evolution] status=${res.status} body=${text}`)
+            }).catch((err) => {
+              console.error(`[Evolution] fetch error: ${err}`)
             })
           )
         }
@@ -169,6 +174,42 @@ export default {
           .select()
           .single()
         if (error) throw error
+
+        // Notificar cliente via WhatsApp
+        if (env.EVOLUTION_API_URL && env.EVOLUTION_API_KEY && env.EVOLUTION_INSTANCE && data) {
+          const apt = data as { client_name: string; phone: string; service: string; date: string; time: string }
+          let msg = ''
+          if (body.status === 'confirmed') {
+            msg =
+              `✅ *Agendamento Confirmado!*\n` +
+              `Olá, ${apt.client_name}!\n\n` +
+              `Seu horário foi confirmado:\n` +
+              `✂️ ${apt.service}\n` +
+              `📅 ${apt.date}  ⏰ ${apt.time}\n\n` +
+              `Te esperamos no *Espaço da Beleza*! 💛`
+          } else if (body.status === 'cancelled') {
+            msg =
+              `❌ *Agendamento Cancelado*\n` +
+              `Olá, ${apt.client_name}.\n\n` +
+              `Seu agendamento de ${apt.service} em ${apt.date} às ${apt.time} foi cancelado.\n\n` +
+              `Entre em contato para reagendar. 😊`
+          }
+          if (msg) {
+            const clientPhone = apt.phone.replace(/\D/g, '')
+            ctx.waitUntil(
+              fetch(`${env.EVOLUTION_API_URL}/message/sendText/${env.EVOLUTION_INSTANCE}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'apikey': env.EVOLUTION_API_KEY },
+                body: JSON.stringify({ number: clientPhone, options: { delay: 0 }, textMessage: { text: msg } }),
+              }).then(async (res) => {
+                console.log(`[Evolution client] status=${res.status}`)
+              }).catch((err) => {
+                console.error(`[Evolution client] error: ${err}`)
+              })
+            )
+          }
+        }
+
         return json(data)
       }
 

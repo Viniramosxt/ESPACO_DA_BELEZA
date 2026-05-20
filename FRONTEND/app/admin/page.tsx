@@ -82,7 +82,11 @@ export default function AdminPage() {
 
   async function updateStatus(id: string, status: Appointment['status']) {
     setUpdatingId(id)
-    await supabase.from('appointments').update({ status }).eq('id', id)
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/appointments/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status }),
+    })
     setAppointments((prev) =>
       prev.map((a) => (a.id === id ? { ...a, status } : a)),
     )
